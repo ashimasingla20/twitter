@@ -1,14 +1,52 @@
 <!DOCTYPE html>
 <html>
-
-	<head>
-    
+    <head>
         <title>Twitter trends test</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/style.css">
 	</head>
     
 <body>
-<h1>Here you go!</h1>
+    <div id="wrapper">
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                     Select Countries 
+                </li>
+                <li>
+                <select id="country1">
+                <option> country name <div id="down-triangle"></div>
+                       </option>
+
+                </select>
+                </li>
+                <li>
+                <select id="country2">
+                <option> country name </option>
+                </select>
+                </li>
+                <li class="sidebar-brand">
+                    Common Trends   
+                </li>
+                <div id="info"></div>
+            </ul>
+        </div>
+    </div>
+    <!-- chart-->
+    <div class="widget">
+        <div style="font-size:25px;"> 
+            <b style=" text-align:center">Trends Weight Contribution</b>
+        </div>
+
+        <div id="chart" class="chart-container">
+        </div>
+    </div>
 </body>
+<script src="d3_js/d3.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="js/script.js"></script>
+
 </html>
